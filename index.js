@@ -3,6 +3,7 @@ import Manager from "./lib/Manager.js";
 import Intern from "./lib/Intern.js";
 import Engineer from "./lib/Engineer.js";
 import fs from "fs";
+import generateHTML from "./src/page-template.js";
 
 const teamArray = [];
 
