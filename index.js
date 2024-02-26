@@ -72,8 +72,6 @@ const addManager = async () => {
   console.log(manager);
 };
 
-
-
 const addEmployee = async () => {
   const employeeData = await inquirer.prompt([
     {
@@ -193,7 +191,6 @@ const writeFile = (data) => {
 
 addManager()
   .then(addEmployee)
-  // to be added in future branch
-  // .then((teamArray) => generateHTML(teamArray))
+  .then((teamArray) => generateHTML(teamArray))
   .then((pageHTML) => writeFile(pageHTML))
   .catch((err) => console.log(err));
