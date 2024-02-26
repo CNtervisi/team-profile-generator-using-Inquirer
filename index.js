@@ -1,5 +1,7 @@
 import inquirer from "inquirer";
 import Manager from "./lib/Manager.js";
+import Intern from "./lib/Intern.js";
+import Engineer from "./lib/Engineer.js";
 import fs from "fs";
 
 const teamArray = [];
@@ -70,7 +72,7 @@ const addManager = async () => {
   console.log(manager);
 };
 
-addManager();
+
 
 const addEmployee = async () => {
   const employeeData = await inquirer.prompt([
