@@ -9,7 +9,6 @@ node_modules/
 npm-debug.log*
 
 # Ignore any files generated during development or testing
-dist/
 coverage/
 
 # Ignore any sensitive or environment-specific files
